@@ -71,8 +71,9 @@ public class MainActivityFragment extends Fragment {
         errorDisplayView = (TextView) rootView.findViewById(R.id.tv_error_message_display);
 
         //listView.setAdapter(movieAdapter);
-        loadMovieData();
+
         gridView.setAdapter(movieAdapter);
+        loadMovieData();
 
 
 
@@ -153,9 +154,9 @@ public class MainActivityFragment extends Fragment {
         protected void onPostExecute(Movie[] movies) {
             loadingIndicator.setVisibility(View.INVISIBLE);
             if (movies != null) {
-                //movieAdapter.setMovieData(movies);
+                movieAdapter.setMovieData(movies);
                 Log.v(TAG, "LONGITUD DE LAS PELICULAS ES " + movies.length);
-                movieAdapter = new MovieAdapter(getActivity(), Arrays.asList(movies));
+                //movieAdapter = new MovieAdapter(getActivity(), Arrays.asList(movies));
             }
             else{
                 showErrorMessage();

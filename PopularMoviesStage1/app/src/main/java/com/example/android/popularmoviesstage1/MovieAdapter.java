@@ -16,8 +16,11 @@ import static android.content.ContentValues.TAG;
 
 public class MovieAdapter extends ArrayAdapter<Movie> {
 
-    //private Movie[] moviesData;
+    private Movie[] moviesData;
 
+    public MovieAdapter(Activity context){
+        super(context,0);
+    }
 
     public MovieAdapter(Activity context, List<Movie> movies){
         super(context, 0, movies);
@@ -65,11 +68,10 @@ public class MovieAdapter extends ArrayAdapter<Movie> {
         return convertView;
     }
 
-/**
     public void setMovieData(Movie[] movies){
         moviesData  = movies;
         notifyDataSetChanged();
         Log.v(TAG, "SET MOVIE DATA TITLE IS: " + movies[1].getTitle());
     }
-*/
+
 }
