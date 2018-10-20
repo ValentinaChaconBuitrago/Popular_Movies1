@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:padding="16dp">
+
+    <!--This image view will contain the thumbnail of the movie -->
+    <ImageView
+        android:id="@+id/grid_item_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp" />
+
+    <!--This text view will contain the title of the movie-->
+    <TextView
+        android:id="@+id/title_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prueba"
+        android:background="@android:color/black"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+    <item android:id="@+id/sortbyPop_settings"
+          android:title="Sort by popularity"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+    <item android:id="@+id/sortbyVotes_settings"
+        android:title="Sort by votes"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+</menu>
