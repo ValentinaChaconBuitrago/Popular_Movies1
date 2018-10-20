@@ -57,7 +57,7 @@ public class MainActivityFragment extends Fragment {
         mySnackbar = Snackbar.make(contextView, R.string.error_message,Snackbar.LENGTH_LONG);
 
 
-        //movieAdapter = new MovieAdapter(getActivity(), Arrays.asList(mov));
+        movieAdapter = new MovieAdapter(getActivity());
 
 
         //Get a reference to the GridView, and attach this adapter to it.
