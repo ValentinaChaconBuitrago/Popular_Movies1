@@ -76,9 +76,6 @@ public class MainActivityFragment extends Fragment {
         loadMovieData();
 
 
-
-
-
         /**
          * Once all views are setup, the next step is to load the movies data
          */

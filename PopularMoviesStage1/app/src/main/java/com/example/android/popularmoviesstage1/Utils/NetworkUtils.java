@@ -34,7 +34,7 @@ public class NetworkUtils {
 
         String firstPart = "https://api.themoviedb.org/3/discover/movie?page=1&include_video=false&include_adult=false&sort_by=";
 
-        //REMEMBER TO REMOVE YOUR API KEY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //TODO REMEMBER TO REMOVE YOUR API KEY!!!!!
         String lastPart = "&language=en-US&api_key=";
 
         String result = firstPart+filterQuery+lastPart;
