@@ -35,7 +35,7 @@ public class Movie {
      */
     public Movie(int pVoteCount, int pId, boolean pVideo, double pVoteAverage, String pTitle, double pPopularity, String pPosterPath,
                  String pOriginalLanguage, String pOriginalTitle, List<Integer> pGenreIds, String pBackdrop, boolean pAdult, String pOverview,
-                 String pRealeaseDate){
+                 String pReleaseDate){
         voteCount = pVoteCount;
         id = pId;
         video = pVideo;
@@ -49,7 +49,7 @@ public class Movie {
         backdropPath = pBackdrop;
         adult = pAdult;
         overview = pOverview;
-        releaseDate = pRealeaseDate;
+        releaseDate = pReleaseDate;
     }
 
     public int getVoteCount(){return voteCount;}

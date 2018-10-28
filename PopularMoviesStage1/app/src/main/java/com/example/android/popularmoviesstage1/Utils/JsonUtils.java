@@ -3,13 +3,10 @@ package com.example.android.popularmoviesstage1.Utils;
 
 import android.content.Context;
 import android.util.Log;
-
 import com.example.android.popularmoviesstage1.Model.Movie;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -34,19 +31,9 @@ public final class JsonUtils {
      * @return Array of movies
      * @throws JSONException If JSON data cannot be properly parsed
      */
-    //Aqui debo mandar un arreglo de peliculas, entonces lo leo como si fuera a hacer el sadwich solo que debo
-    //Tener en cuenta el arreglo que me entra entonces incorporo lo de JSON array de sunshine.
     public static Movie[] parseMovieJson(Context context, String Json) throws JSONException{
 
-        //DESDE EL MAIN ACTIVITY LLAMAMOS ESTA CLASE Y POR PARAMETRO EL ENTRA EL CONTEXTO, QUE ES MAINACTIVITY.THIS, Y EL
-        //STRING JSON QUE LE ENTRA VIENE DE PEDIRLE AL METODO NETWORK UTILS QUE NOS DE EL STRING RESULTADO DE LA QUERY
-
-
         JSONObject allInfo = new JSONObject(Json);
-        //We do not have this entire amount because we have a single page and not all of them
-        int amountResults = allInfo.getInt("total_results");
-
-
         JSONArray results = allInfo.getJSONArray("results");
 
         Movie[] movies = new Movie[results.length()];

@@ -2,22 +2,15 @@ package com.example.android.popularmoviesstage1;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.GridView;
-import android.widget.LinearLayout;
-import android.widget.ProgressBar;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity {
 
 
     static String sortCriteria = "popularity.desc";
-
-
+    
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -36,14 +29,13 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         if(id == R.id.sortbyPop_settings){
             sortCriteria = "popularity.desc";
-            //MainActivityFragment.loadMovieData();
+            getSupportFragmentManager().beginTransaction().replace((R.id.activityFragment), new MainActivityFragment()).commit();
             return true;
 
         }
-        else if (id == R.id.sortbyVotes_settings){
+        else if (id == R.id.sortbyRate_settings){
             sortCriteria = "vote_average.desc";
-            //TODO AQUI TENGO QUE LLAMAR AL METODO loadMovieData()?????
-            //MainActivityFragment.loadMovieData();
+            getSupportFragmentManager().beginTransaction().replace((R.id.activityFragment), new MainActivityFragment()).commit();
             return true;
         }
         return super.onOptionsItemSelected(item);

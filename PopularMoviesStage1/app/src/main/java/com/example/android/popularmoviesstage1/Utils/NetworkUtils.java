@@ -9,7 +9,6 @@ import com.squareup.okhttp.Request;
 import com.squareup.okhttp.RequestBody;
 import com.squareup.okhttp.Response;
 
-import java.net.URL;
 
 /**
  * These utilities will be used to communicate with the MovieDb
@@ -27,7 +26,7 @@ public class NetworkUtils {
     /**
      * Construye la URl dependiendo del parametro con el cual se busca filtrar la información.
      * @param filterQuery an example of a filter query is popularity.desc
-     * @return
+     * @return resulting URL
      */
     public static String buildUrl(String filterQuery){
 
@@ -36,8 +35,9 @@ public class NetworkUtils {
 
         //TODO REMEMBER TO REMOVE YOUR API KEY!!!!!
         String lastPart = "&language=en-US&api_key=";
+        String key = "API_KEY";
 
-        String result = firstPart+filterQuery+lastPart;
+        String result = firstPart+filterQuery+lastPart + key;
 
         Log.v(TAG, "Built Url " + result);
 

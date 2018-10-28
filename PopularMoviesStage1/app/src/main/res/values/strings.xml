@@ -1,4 +1,19 @@
 <resources>
     <string name="app_name">Popular Movies</string>
     <string name="error_message">Error loading data</string>
+    <string name="initial_path">http://image.tmdb.org/t/p/w185/</string>
+    <string name="no_image">https://vignette.wikia.nocookie.net/janethevirgin/images/4/42/Image-not-available_1.jpg/revision/latest?cb=20150721102313</string>
+    <string name="first_part">https://api.themoviedb.org/3/discover/movie?page=1&amp;include_video=false&amp;include_adult=false&amp;sort_by=</string>
+    <string name="popularity">popularity.desc</string>
+    <string name="image_description">This image view will contain the thumbnail of the movie</string>
+    <string name="sort_by_popularity">Sort by Popularity</string>
+    <string name="sort_by_rate">Sort by rate</string>
+    <string name="movie_poster">Movie Poster</string>
+    <string name="original_title">Original Title:</string>
+    <string name="original_language">Original Language:</string>
+    <string name="release_date">Release Date:</string>
+    <string name="popularity_tag">Popularity</string>
+    <string name="vote_average">Vote Average: </string>
+    <string name="overview">Overview: </string>
+    <string name="blank">%d</string>
 </resources>

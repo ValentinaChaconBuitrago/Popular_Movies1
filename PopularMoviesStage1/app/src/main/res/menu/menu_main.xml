@@ -4,11 +4,11 @@
       xmlns:tools="http://schemas.android.com/tools"
       tools:context=".MainActivity">
     <item android:id="@+id/sortbyPop_settings"
-          android:title="Sort by popularity"
+          android:title="@string/sort_by_popularity"
           android:orderInCategory="100"
           app:showAsAction="never"/>
-    <item android:id="@+id/sortbyVotes_settings"
-        android:title="Sort by votes"
+    <item android:id="@+id/sortbyRate_settings"
+        android:title="@string/sort_by_rate"
         android:orderInCategory="100"
         app:showAsAction="never"/>
 </menu>
