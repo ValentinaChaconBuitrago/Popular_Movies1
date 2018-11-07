@@ -23,7 +23,7 @@ allprojects {
 
     /**
     project.ext {
-        apiKey = f3d3c2621220f0e7d9ca0a3602c42f3c
+        apiKey = API
     }
      */
 }
