@@ -16,4 +16,5 @@
     <string name="vote_average">Vote Average: </string>
     <string name="overview">Overview: </string>
     <string name="blank">%d</string>
+    <string name="notification">Something went wrong!</string>
 </resources>

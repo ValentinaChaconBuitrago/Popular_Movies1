@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.example.android.popularmoviesstage1.DetailActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size"/>
+
+    <ImageView
+        android:id="@+id/posterImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_poster"
+        android:scaleType="centerCrop"
+        android:fadingEdge="horizontal"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#A1A2B2"/>
+
+    <TextView
+        style = "@style/title_text_view"
+        android:text="@string/original_title"/>
+
+    <TextView
+        style = "@style/info_text_view"
+        android:id="@+id/originalTitleTextView" />
+
+
+    <TextView
+        style = "@style/title_text_view"
+        android:text="@string/original_language" />
+
+    <TextView
+        style = "@style/info_text_view"
+        android:id="@+id/originalLanguageTextView" />
+
+    <TextView
+        style = "@style/title_text_view"
+        android:text="@string/release_date" />
+
+    <TextView
+        style = "@style/info_text_view"
+        android:id="@+id/releaseDateTextView"/>
+
+
+    <TextView
+        style = "@style/title_text_view"
+        android:text="@string/popularity_tag"/>
+
+    <TextView
+        style = "@style/info_text_view"
+        android:id="@+id/popularityTextView"/>
+
+    <TextView
+        style = "@style/title_text_view"
+        android:text="@string/vote_average"/>
+
+    <TextView
+        style = "@style/info_text_view"
+        android:id="@+id/voteAverageTextView"/>
+
+    <TextView
+        style = "@style/title_text_view"
+        android:text="@string/overview"/>
+
+    <TextView
+        style = "@style/info_text_view"
+        android:id="@+id/overviewTextView"/>
+</LinearLayout>

@@ -31,13 +31,14 @@ public class NetworkUtils {
     public static String buildUrl(String filterQuery){
 
 
-        String firstPart = "https://api.themoviedb.org/3/discover/movie?page=1&include_video=false&include_adult=false&sort_by=";
+        String first = "http://api.themoviedb.org/3/movie/";
+
+        //String firstPart = "https://api.themoviedb.org/3/discover/movie?page=1&include_video=false&include_adult=false&sort_by=";
 
         //TODO REMEMBER TO REMOVE YOUR API KEY!!!!!
-        String lastPart = "&language=en-US&api_key=";
+        String lastPart = "?api_key=";
         String key = "API_KEY";
-
-        String result = firstPart+filterQuery+lastPart + key;
+        String result = first+filterQuery+lastPart + key;
 
         Log.v(TAG, "Built Url " + result);
 

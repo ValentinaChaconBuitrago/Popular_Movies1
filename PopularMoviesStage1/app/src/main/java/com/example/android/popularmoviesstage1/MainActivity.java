@@ -9,7 +9,7 @@ import android.view.MenuItem;
 public class MainActivity extends AppCompatActivity {
 
 
-    static String sortCriteria = "popularity.desc";
+    static String sortCriteria = "popular";
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if(id == R.id.sortbyPop_settings){
-            sortCriteria = "popularity.desc";
+            sortCriteria = "popular";
             getSupportFragmentManager().beginTransaction().replace((R.id.activityFragment), new MainActivityFragment()).commit();
             return true;
 
         }
         else if (id == R.id.sortbyRate_settings){
-            sortCriteria = "vote_average.desc";
+            sortCriteria = "top_rated";
             getSupportFragmentManager().beginTransaction().replace((R.id.activityFragment), new MainActivityFragment()).commit();
             return true;
         }

@@ -74,7 +74,7 @@ public class DetailActivity extends AppCompatActivity {
 
     private void closeOnError() {
         finish();
-        Toast.makeText(this, "Something went wrong!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, getString(R.string.notification), Toast.LENGTH_SHORT).show();
     }
 
     private void populateUI() {
